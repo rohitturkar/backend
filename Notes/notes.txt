@@ -1,0 +1,42 @@
+// Notes for me 
+
+Web Development = Client + Server + Database
+
+
+// Now we have see the client and server already
+
+// Database
+// Now there are lots of database out there in the market, we can use accroding to our need
+
+1. SQL
+2. PostgreSQL
+3. MongoDB ( NO SQL)
+4. MariaDB
+5. Oracle
+
+// Database typically have their  own server systems to manage and provide acess to the data they store.
+
+// These database server systems are separate from nodejs server but work together to create dynamic and data-driven web applications
+
+// NODEJS SERVER AND DATABASE SERVER
+
+A Database server is as specialized computer program or system that manages databases. it stores, retrieves and manages data efficiently.
+
+the database server stores your application data, when your nodejs server needs data . it sends requests to the database server which then retrieves and sends the requested data back to the Nodejs server.
+
+NODEJS server is responsible for handling the HTTP requests from clients ( like web browsers) and returning responses
+
+Nodejs server process these requests , communicates with the database server and sends data to clients
+
+
+
+Client (React,View,Anuglar) <-----> Backend server (Node.js with Expressjs) <---> Database server (MongoDb Atlas Database)
+
+
+
+
+Connect MongoDB with Nodejs
+
+Now, to connect MongoDb with Nodejs we need a MongoDB driver 
+
+
