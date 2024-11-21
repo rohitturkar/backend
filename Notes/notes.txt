@@ -40,3 +40,42 @@ Connect MongoDB with Nodejs
 Now, to connect MongoDb with Nodejs we need a MongoDB driver 
 
 
+
+Mongoose 
+basically Mongoose is a libraray that is responsible for to setup the connection between the mongoDB database and nodejs server
+
+
+There are some steps to connect the Mongodb database with the nodejs
+
+1. Import mongoose and define the mongoDB url
+
+const mongoose=require('mongoose')
+const mongoURL=`mongodb://localhost:27017/mydatabase`
+
+2. setup the mongoDB connection
+
+mongoose.connect(mongoURL)
+
+
+3. Access the default connection object
+
+const db=mongoose.connection
+
+4. define event listeners
+
+db.on("connected",()=>{
+    console.log('mongoDB connected')
+})
+
+db.on('error',(error)=>{
+    console.log(error)
+})
+
+
+5. export the database connection
+
+module.exports=db
+
+
+
+
